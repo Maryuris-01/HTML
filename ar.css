@@ -1,18 +1,65 @@
+body{background-color: blanchedalmond;}
+
 h1{
     color: hotpink;
+
+    margin-top: 20px
 }
+
 .navegacion {
-    background-color: rgb(204, 21, 228);
+    
     border-radius: 5px;
-    height: 50px;
-    margin: 100px ;
-    padding-top: 50px ;
-
-     
+    text-align: center;
+    margin: 20px 0;
+    padding-top: 50px 
 }
 
+nav a{
+    text-decoration: none;
+    color: white;
+    background-color: #ffb6c1;
+    padding: 8px 15px;
+    border-radius: 15px;
+    margin: 5px;
+    display: inline-block;
+}
+
+section{
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+h2{
+    color: #ff69b4;
+}
+}
 .menu {
     display: flex;
     justify-content: space-around;
     
+}
+
+.Pictures{
+    display: flex;
+    width: 600px;
+    height: 430px;
+    border-radius: 5px;
+}
+
+section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+section img:hover{
+    cursor:  crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
 }
