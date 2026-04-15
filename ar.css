@@ -1,56 +1,66 @@
-body{background-color: blanchedalmond;}
+header{
+    background-color: #ff9eb5;
+    padding: 30px;
+    text-align: center;
+}
+
+body{background-color:#fff5f7(236, 236, 236, 0);
+background: linear-gradient(to bottom, #fff0f5, #fdebd0);} /*cambia el color de fondo de la pagina*/
 
 h1{
-    color: hotpink;
+    color: #f1d534; /*changes the color of the text*/
 
-    margin-top: 20px
+    margin-top: 20px /*add space above the text*/
 }
 
 .navegacion {
     
-    border-radius: 5px;
-    text-align: center;
-    margin: 20px 0;
-    padding-top: 50px 
+    border-radius: 5px; /* round the edges*/
+    text-align: center; /*center the contend horizontally*/
+    margin: 20px 0;  /*external space between buttons*/
+    padding-top: 50px /*internal space above*/
 }
 
 nav a{
-    text-decoration: none;
-    color: white;
-    background-color: #ffb6c1;
-    padding: 8px 15px;
-    border-radius: 15px;
-    margin: 5px;
-    display: inline-block;
+    text-decoration: none; /*Remove the underline from the links*/
+    color: white; /*chage the color of the text*/
+    background-color: #ffc0cb; /*Change the background color of the page */
+    padding: 8px 15px; /*intern spaces (above, dawn, asides)*/
+    border-radius: 20px; /* round the edges*/
+    margin: 5px;  /*external space between buttons*/
+    display: inline-block; /* inline-block: allows the element to have block size but be inline */
 }
-
+nav a:hover{
+    background-color: #ff9eb5;
+}
 section{
-    background-color: white;
-    margin: 20px auto;
-    padding: 20px;
-    width: 80%;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background-color: white; /*changes the background color of the pages */
+    margin: 20px auto; /* external space etween buttons*/
+    padding: 20px; /* intern space (above, dawn, asides)*/
+    width: 80%; /* container width*/
+    border-radius: 20px; /*round the edges*/
+    box-shadow: 0 4px 10px rgba(255,182,193,0.5);  /*box-shadow: sombra (x, y, desenfoque, color) */}
 
 h2{
-    color: #ff69b4;
+    color: #ff69b4; /* chages the color of the text*/
 }
-}
+
 .menu {
-    display: flex;
-    justify-content: space-around;
+     
+    display: flex; /* Para ordenar/organizar elementos en fila o columna automaticamente */
+    justify-content: space-around;  /*destribute space between elements*/
     
 }
 
 .Pictures{
-    display: flex;
-    width: 600px;
-    height: 430px;
-    border-radius: 5px;
+    display: flex; /*organize elemnts in fila or columns automatlly*/
+    width: 600px; /*is for the wedth container*/
+    height: 430px; /*for the hight container*/
+    border-radius: 5px; /* round the edges*/
 }
 
 section img{
-    width: 0px;
+    width: 0px; /*is for the widht container*/
     flex-grow: 1;
     object-fit: cover;
     opacity: .8;
@@ -66,9 +76,9 @@ section img:hover{
 
 /* Mantiene tu estilo pero organiza mejor cada imagen */
 .Pictures {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
+    display: flex; /*organize the elements in flash*/
+    gap: 15px; /*spaces between the elemnts*/
+    justify-content: center; /*center horizonntally the elements*/
 }
 
 /* Contenedor de cada mascota */
@@ -79,10 +89,10 @@ section img:hover{
 
 /* Imagen (mantiene tu efecto) */
 .pet img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
+    width: 100%; /*width content*/
+    height: 300px; /*height content*/
+    object-fit: cover;  /*hace que la imagen no se deforme (recorta si es necesario)*/
+    border-radius: 10px; /*round the edges*/
 
     opacity: 0.8;
     transition: 0.5s ease;
@@ -96,10 +106,10 @@ section img:hover{
 /* Texto oculto debajo */
 .info {
     margin-top: 10px;
-    background-color: #ffb6c1;
-    color: white;
-    padding: 8px;
-    border-radius: 10px;
+    background-color: #ffb6c1; /*changes the background color of the pages*/
+    color: white; /*chages the color of the text*/
+    padding: 8px; /*intern space*/
+    border-radius: 10px; /*round the edges*/
 
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -112,12 +122,12 @@ section img:hover{
 
 .botones a{
     text-decoration: none;
-    color: white;
-    background-color: #ffb6c1;
-    padding: 8px 15px;
-    border-radius: 15px;
-    margin: 5px;
-    display: inline-block;
+    color: white; /*changes color the text*/
+    background-color: #e690fc9d; /*changes the background color of the pages*/
+    padding: 8px 15px; /*intern soaces*/
+    border-radius: 15px; /*round the edges*/
+    margin: 5px; /* external space */
+    display: inline-block; /*organize the information in colums or flash*/
 
     transition: all 0.5s ease; /* animación suave */
 }
@@ -125,5 +135,38 @@ section img:hover{
 /* efecto al pasar el mouse */
 .botones a:hover{
     transform: translateY(-5px); /* se levanta */
-    box-shadow: 0 8px 15px rgba(187, 41, 131, 0.2);
+    box-shadow: 0 8px 15px rgba(255, 4, 159, 0.2); /*shadow stronger when the mouse is obove of the image*/}
+
+#Contacto input{
+    width: 300px;
+    height: 45px;
+    font-size: 16px;
+    padding: 16px;
+    border-radius: 20px;
+    border: 2px solid;
+}
+
+ #Contacto input[type="button"] {
+  width: 150px;
+  height: 45px;
+  font-size: 16px;
+  background-color: #ff69b4;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+footer{
+    background-color: #ff9eb5;
+    padding: 30px;
+}
+
+.devuelta{
+
+}
+
+footer{
+    padding: 45px;
 }
