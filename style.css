@@ -42,14 +42,22 @@ h2 {
     letter-spacing: 2px;
 }
 
-.menu {
-    display: flex;
-    justify-content: space-around;
+ .menu {
+    display: grid;
+
+    /* crea 3 columnas iguales automaticamente */
+    grid-template-columns: 1fr 1fr 1fr;
+
+    /* espacio entre cada tarjeta */
+    gap: 20px;
+
+    /* margen para que no quede pegado a los bordes */
+    margin-top: 15px;
 }
 
 .Pictures {
     display: flex;
-    width: 600px;
+    width: 90%;
     height: 430px;
     border-radius: 5px;
 }
@@ -129,7 +137,7 @@ header {
     justify-content: space-around;
     align-items: center;
     background-color: #e591cc;
-    padding: 25px;
+    padding: 5px;
 }
 
 .contact input {
@@ -161,7 +169,21 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #e591cc;
+    background-color:  #e591cc;
     color: white;
-    padding: 20px;
+    padding: 5px;
 }
+.boton-home {
+    text-align: center;
+    margin: 20px;
+}
+
+.boton-home a {
+    background-color: #d4a090;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
