@@ -1,9 +1,9 @@
-  body {
+body {
     background-color: #f2d4c8;
     
 }
 
- 
+
 h1 {
     color: white;
     margin-top: 20px;
@@ -44,7 +44,7 @@ h2 {
     letter-spacing: 2px;
 }
 
- .menu {
+.menu {
     display: grid;
 
     /* crea 3 columnas iguales automaticamente */
@@ -196,5 +196,3 @@ footer {
     text-decoration: none;
     transition: all 0.3s ease;
 }
-
- 
