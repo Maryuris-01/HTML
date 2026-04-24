@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="es">
-     
+    
 <head>
-     
+    
     <meta charset="UTF-8">
     <meta name="viewport" content= "width, initial-scale=1.0">
     <title>My portfolio</title>
     <link rel="icon" href="logo.webp" >
-    <link rel="stylesheet"  href="ar.css"> 
+    <link rel="stylesheet"  href="style.css"> 
    
 </head>
     
@@ -17,40 +17,49 @@
         </header>
                 <nav class="navegacion">
                     <div class="botones">
-                        <a href="#About me">About me </a>
+                        <a href="#About-me">About me </a>
                         <a href="#Proyects"> My proyects </a>
                         <a href="#mascotas.html"> Pets </a>
                         <a href="#Contact"> Contact </a>
-                        <a href="#Pets"> Pets </a>
                     </div>
                     </nav>    
 
-                <section id="About me ">
+                <section id="About-me">
                     <h2>About me </h2>
                     <p>About me: <br>
                     I'm a software developer in training.
-                    I'm currently working on a ATM simulator I'm also learning Python as well</p>
+                    I'm currently learning Python, HTML, and CSS.</p>
                 </section>
 
                 <section id="Proyects">
                     <h2>My proyects</h2>
+                    <div class="menu"> 
                     <ul>
                         <li><a href="https://github.com/Maryuris-01/Historia-De-Usuario" target="_blank"> Individual proyect</a> </li>
                         <li><a href="https://github.com/Maryuris-01/SGC_GYM/tree/feauture/Mau" target="_blank"> Group proyect </a></li>
-                        <li> <a href="https://github.com/Maryuris-01/Python_Ejercicios" target=""> Individual proyect</a></li>
+                        <li> <a href="https://github.com/Maryuris-01/Python_Ejercicios" target="blank"> Individual proyect</a></li>
                         <li> <a href="mascotas.html" target="_blank"> Go to Pets </a></li>
                     </ul>
+                    </div>
                 </section>
 
-                <form >
-                <section id="Contacto">
+                <form>
+                <section id="contact">
                 <h2>Contact</h2>
-                <input type="text" name="Enter your name" placeholder="Enter your name">
-                <input type="text" name="Enter your contact" placeholder="Enter your contact"> <br>
-                <input type="button" value="Send" /> 
+                <div class="formulario">
+                    <input type="text" name="Enter your name" placeholder="Enter your name" >
+                </div>
+                <input type="text" name="Enter your contact" placeholder="Enter your contact"><br>
+                <button type="submit" id="boton"> Send</button>
                 </section> 
                 </form>
     
+        <footer>
+            <h2>@ 2026 Maryuris Aragón</h2>
+        </footer>
+
+
+        <script src="script.js"></script>
         
     </body>
  
